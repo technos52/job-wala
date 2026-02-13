@@ -1,0 +1,44 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "jobease-edevs",
+          "appId": "1:828440824665:android:b674b630030d2ff7a4da48",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "jobease-edevs",
+          "configurations": {
+            "android": "1:828440824665:android:b674b630030d2ff7a4da48",
+            "ios": "1:828440824665:ios:b6435bd5146bcbaea4da48",
+            "macos": "1:828440824665:ios:b6435bd5146bcbaea4da48",
+            "web": "1:828440824665:web:d932c82ab3cfdc8fa4da48",
+            "windows": "1:828440824665:web:d87bd5571c5ad6a1a4da48"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "site": "jobease-52",
+    "public": "build/web",
+    "rewrites": [
+      {
+        "destination": "/index.html",
+        "source": "**"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

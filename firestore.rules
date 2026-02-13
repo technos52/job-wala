@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Rules for candidates collection
+    match /candidates/{candidateId} {
+      allow read, write: if request.auth != null;
+      
+      // Rules for applications subcollection - allow authenticated users to write
+      match /applications/{applicationId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+    
+    // Rules for employers/companies collection
+    match /employers/{employerId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Rules for companies collection (alternative naming)
+    match /companies/{companyId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Rules for jobs collection (if needed)
+    match /jobs/{jobId} {
+      allow read: if true; // Jobs can be read by anyone
+      allow write: if request.auth != null; // Only authenticated users can create/edit jobs
+    }
+    
+    // Rules for applications collection (if needed)
+    match /applications/{applicationId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Rules for dropdown_options collection - allow read access for all authenticated users
+    match /dropdown_options/{optionId} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only allow reading, not writing
+    }
+    
+    // Deny access to all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "828440824665",
+    "project_id": "jobease-edevs",
+    "storage_bucket": "jobease-edevs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828440824665:android:b674b630030d2ff7a4da48",
+        "android_client_info": {
+          "package_name": "com.example.jobber_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828440824665-7r2rre7rci5j70e67baki17554iik81a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobber_app",
+            "certificate_hash": "282f968bd0bac4b35e5f8fb48aa4443c6cc90b4a"
+          }
+        },
+        {
+          "client_id": "828440824665-oh6p75apipsven14mde50uumm6rljka4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobber_app",
+            "certificate_hash": "3a5b502dc7fe80219606053f32425d9e230fedf7"
+          }
+        },
+        {
+          "client_id": "828440824665-ai23mjrhbkfqmdcgsmq4dvne7g1e8nv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGvZC6OrdqBPvrMiO-WgCWUD0bV0Ox_Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828440824665-ai23mjrhbkfqmdcgsmq4dvne7g1e8nv0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "828440824665-3sfl3dm09190id0j1a1lrromvofltgqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jobberApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828440824665:android:e3d71ec5fa478cdaa4da48",
+        "android_client_info": {
+          "package_name": "com.example.my_flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828440824665-ai23mjrhbkfqmdcgsmq4dvne7g1e8nv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGvZC6OrdqBPvrMiO-WgCWUD0bV0Ox_Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828440824665-ai23mjrhbkfqmdcgsmq4dvne7g1e8nv0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "828440824665-3sfl3dm09190id0j1a1lrromvofltgqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jobberApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828440824665:android:681d4d6c2af7017ea4da48",
+        "android_client_info": {
+          "package_name": "com.shailesh.alljobsopen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828440824665-ai23mjrhbkfqmdcgsmq4dvne7g1e8nv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGvZC6OrdqBPvrMiO-WgCWUD0bV0Ox_Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828440824665-ai23mjrhbkfqmdcgsmq4dvne7g1e8nv0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "828440824665-3sfl3dm09190id0j1a1lrromvofltgqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jobberApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
