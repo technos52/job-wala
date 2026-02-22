@@ -1,26 +1,113 @@
-# All Job Open
+# Jobber - Flutter Job Portal App
 
-All Job Open - Your gateway to career opportunities.
+A comprehensive job portal application built with Flutter and Firebase, connecting job seekers with employers.
 
-## About
+## Features
 
-All Job Open is a comprehensive job portal application built with Flutter, connecting job seekers with employers across various industries.
+### For Job Seekers (Candidates)
+- User registration and authentication
+- Profile creation and management
+- Job search and filtering
+- Job application tracking
+- Resume management
 
-## Company Information
+### For Employers
+- Company registration and verification
+- Job posting and management
+- Applicant tracking and management
+- Company profile management
+- Analytics dashboard
 
-- **Company Name**: All Job Open
-- **Email**: support@alljobopen.com  
-- **Address**: Ringus, Sikar, Rajasthan, India
+### Admin Features
+- User and employer management
+- Job approval system
+- Analytics and reporting
+- System configuration
+
+## Tech Stack
+
+- **Frontend**: Flutter (Dart)
+- **Backend**: Firebase (Firestore, Authentication, Storage)
+- **State Management**: Provider
+- **Authentication**: Firebase Auth with Google Sign-In
+- **Database**: Cloud Firestore
+- **Storage**: Firebase Storage
+- **Analytics**: Firebase Analytics
+- **Monetization**: AdMob integration
 
 ## Getting Started
 
-This project is a Flutter application for job searching and recruitment.
+### Prerequisites
+- Flutter SDK (latest stable version)
+- Android Studio / VS Code
+- Firebase account
+- Android/iOS development environment
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository
+```bash
+git clone https://github.com/technos52/jobber.git
+cd jobber
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Install dependencies
+```bash
+flutter pub get
+```
+
+3. Configure Firebase
+- Add your `google-services.json` for Android
+- Add your `GoogleService-Info.plist` for iOS
+- Update Firebase configuration in `lib/firebase_options.dart`
+
+4. Run the app
+```bash
+flutter run
+```
+
+## Project Structure
+
+```
+lib/
+├── main.dart                 # App entry point
+├── screens/                  # UI screens
+├── widgets/                  # Reusable widgets
+├── services/                 # Business logic and API calls
+├── models/                   # Data models
+├── utils/                    # Utility functions
+└── data/                     # Static data and constants
+```
+
+## Build for Production
+
+### Android APK
+```bash
+flutter build apk --release
+```
+
+### Android App Bundle (for Play Store)
+```bash
+flutter build appbundle --release
+```
+
+### iOS
+```bash
+flutter build ios --release
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support and questions, please open an issue in the GitHub repository.

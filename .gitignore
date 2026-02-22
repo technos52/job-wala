@@ -5,11 +5,9 @@
 *.swp
 .DS_Store
 .atom/
-.build/
 .buildlog/
 .history
 .svn/
-.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
@@ -27,11 +25,12 @@ migrate_working_dir/
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
-/coverage/
 
 # Symbolication related
 app.*.symbols
@@ -44,8 +43,54 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Keystore files - NEVER commit these!
-*.jks
-*.keystore
-android/key.properties
-upload-keystore.jks
+# Exclude unnecessary documentation and debug files
+*.md
+!README.md
+!PLAY_STORE_DEPLOYMENT_GUIDE.md
+debug_*.dart
+test_*.dart
+verify_*.dart
+*_summary.dart
+*_fix*.dart
+trace_*.dart
+fix_*.dart
+setup_*.dart
+check_*.dart
+cleanup_*.dart
+clean_*.dart
+modal_*.dart
+overlay_*.dart
+remove_*.dart
+simple_*.dart
+force_*.dart
+final_*.dart
+dev_*.dart
+firebase_direct_test.dart
+
+# Exclude batch and shell scripts (keep essential ones)
+*.bat
+!build_production_aab.bat
+!create_production_keystore.bat
+!verify_keystore.bat
+*.sh
+
+# Exclude JavaScript files
+*.js
+
+# Exclude JSON data files
+*.json
+!pubspec.lock
+!android/app/google-services.json
+!firebase.json
+!firestore.indexes.json
+!web/manifest.json
+
+# Exclude text files
+*.txt
+!keystore_config.txt
+
+# Exclude HTML files except essential ones
+*.html
+!web/index.html
+!public/index.html
+!web/admin/index.html
